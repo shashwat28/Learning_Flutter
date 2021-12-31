@@ -4,7 +4,7 @@ void main() {
   runApp(MaterialApp(
     home:HomePage(),
     theme: ThemeData(
-      primarySwatch: Colors.green,
+      primarySwatch: Colors.blue,
     ),
   ));
 }
@@ -14,32 +14,22 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chhapa Hai"),
+        title: Text("DUMB TRACKER"),
       ),
-      body: Center(
-        child: Container(
+      body: Container(
+        padding: const EdgeInsets.all(20),
+        color:Colors.indigo[900],
+        width: 500,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
           padding: const EdgeInsets.all(8),
-          width:100,
-          height: 100,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(10),
-            gradient: LinearGradient(
-              colors: [
-                Colors.blueGrey,
-                Colors.indigo,
-              ]
-            ),
-          ),
-          child: Text("Chappa",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 15,
-            color: Colors.orange,
-            fontWeight: FontWeight.bold
-          ),
-          ),
+          width:350,
+          height: 200,
+          color: Colors.blue[900],
+        ),
+          ],
         ),
       ),
     );
